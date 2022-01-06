@@ -17,6 +17,7 @@ import {SafeAreaView} from 'react-native-safe-area-context';
 import {goToScreen} from '@actions/navigation';
 import LocalConfig from '@assets/config';
 import gitlab from '@assets/images/gitlab.png';
+import maveno from '@assets/images/maveno.png';
 import google from '@assets/images/google.png';
 import FormattedText from '@components/formatted_text';
 import StatusBar from '@components/status_bar';
@@ -176,13 +177,13 @@ export default class LoginOptions extends PureComponent {
                     containerStyle={[GlobalStyles.signupButton, additionalButtonStyle]}
                 >
                     <Image
-                        source={gitlab}
+                        source={maveno}
                         style={logoStyle}
                     />
                     <Text
                         style={[GlobalStyles.signupButtonText, {color: textColor}]}
                     >
-                        {'GitLab'}
+                        {'Maveno'}
                     </Text>
                 </Button>
             );
